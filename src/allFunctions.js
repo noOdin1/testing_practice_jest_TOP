@@ -2,7 +2,7 @@
 
 const myFunctions = {
   capitalize: (word) => {
-    console.log("capitalize the first letter");
+    return word.replace(/^./, (match) => match.toUpperCase());
   },
 };
 
