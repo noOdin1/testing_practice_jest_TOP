@@ -4,7 +4,11 @@
   "description": "Testing Practice using jest - TOP JS @56%",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "watch": "jest --watch *.js",
+    "build": "webpack --config webpack.prod.js",
+    "dev": "webpack serve --config webpack.dev.js",
+    "deploy": "git subtree push --prefix dist origin gh-pages"
   },
   "repository": {
     "type": "git",
@@ -23,6 +27,13 @@
   "homepage": "https://github.com/noOdin1/testing_practice_jest_TOP#readme",
   "devDependencies": {
     "@babel/preset-env": "^7.29.2",
-    "jest": "^30.3.0"
+    "css-loader": "^7.1.4",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.6",
+    "jest": "^30.3.0",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.106.1",
+    "webpack-cli": "^7.0.2",
+    "webpack-dev-server": "^5.2.3"
   }
 }
