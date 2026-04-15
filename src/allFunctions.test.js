@@ -16,3 +16,11 @@ it("Capitalize first letter - test 3", () => {
 it("Capitalize first letter - test 4", () => {
   expect(myFunctions.capitalize("HELLO")).toBe("HELLO");
 });
+
+it("Reverse a string - test 1", () => {
+  expect(myFunctions.reverseStr("rightside")).toBe("edisthgir");
+});
+
+it("Reverse a string - test 2", () => {
+  expect(myFunctions.reverseStr("edisthgir")).toBe("rightside");
+});
