@@ -24,3 +24,19 @@ it("Reverse a string - test 1", () => {
 it("Reverse a string - test 2", () => {
   expect(myFunctions.reverseStr("edisthgir")).toBe("rightside");
 });
+
+it("Add 2 numbers - test 1", () => {
+  expect(myFunctions.calculator.add(1, 2)).toBe(3);
+});
+
+it("Substract 2 numbers - test 1", () => {
+  expect(myFunctions.calculator.sub(6, 2)).toBe(4);
+});
+
+it("Multiply 2 numbers - test 1", () => {
+  expect(myFunctions.calculator.mul(6, 2)).toBe(12);
+});
+
+it("Divide a number by another number - test 1", () => {
+  expect(myFunctions.calculator.div(6, 2)).toBe(3);
+});
