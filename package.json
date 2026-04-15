@@ -1,0 +1,28 @@
+{
+  "name": "testing_practice_jest_top",
+  "version": "1.0.0",
+  "description": "Testing Practice using jest - TOP JS @56%",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noOdin1/testing_practice_jest_TOP.git"
+  },
+  "keywords": [
+    "testing",
+    "jest",
+    "babel"
+  ],
+  "author": "noOdin1",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noOdin1/testing_practice_jest_TOP/issues"
+  },
+  "homepage": "https://github.com/noOdin1/testing_practice_jest_TOP#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.29.2",
+    "jest": "^30.3.0"
+  }
+}
