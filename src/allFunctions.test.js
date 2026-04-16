@@ -53,3 +53,17 @@ it("Divide a number by another number - test 1", () => {
 it("Divide a number by another number - test 2", () => {
   expect(myFunctions.calculator.div(6, 0)).toBe(undefined);
 });
+
+// Test for isAlphabet()
+it("isAlphabet test 01 - Check 'a'", () => {
+  expect(myFunctions.isAlphabet("a")).toBe(true);
+});
+
+it("isAlphabet test 02 - Check 'D'", () => {
+  expect(myFunctions.isAlphabet("D")).toBe(true);
+});
+
+it("isAlphabet test 03 - Check '-'", () => {
+  expect(myFunctions.isAlphabet("-")).toBe(false);
+});
+
