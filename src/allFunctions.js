@@ -23,6 +23,12 @@ const myFunctions = {
       return b == 0 ? undefined : a / b;
     },
   },
+
+  // checks if 'arg' is an alphabet
+  isAlphabet: (arg) => {
+    return /^[a-z]$/i.test(arg);
+  },
+
 };
 
 export { myFunctions };
