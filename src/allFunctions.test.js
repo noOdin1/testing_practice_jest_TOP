@@ -49,3 +49,7 @@ it("Multiply 2 numbers - test 1", () => {
 it("Divide a number by another number - test 1", () => {
   expect(myFunctions.calculator.div(6, 2)).toBe(3);
 });
+
+it("Divide a number by another number - test 2", () => {
+  expect(myFunctions.calculator.div(6, 0)).toBe(undefined);
+});
