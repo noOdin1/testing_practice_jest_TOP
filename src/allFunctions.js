@@ -20,7 +20,7 @@ const myFunctions = {
       return a * b;
     },
     div: (a, b) => {
-      return a / b;
+      return b == 0 ? undefined : a / b;
     },
   },
 };
