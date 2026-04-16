@@ -54,6 +54,35 @@ it("Divide a number by another number - test 2", () => {
   expect(myFunctions.calculator.div(6, 0)).toBe(undefined);
 });
 
+// CaesarCipher tests
+it("CaesarCipher test 01 - Normal shift", () => {
+  expect(myFunctions.caesarCipher("abc", 3)).toBe("def");
+});
+
+it("CaesarCipher test 02 - Normal shift", () => {
+  expect(myFunctions.caesarCipher("aBc", 3)).toBe("dEf");
+});
+
+it("CaesarCipher test 03 - Shift with non-alphabet", () => {
+  expect(myFunctions.caesarCipher("a-c", 3)).toBe("d-f");
+});
+
+it("CaesarCipher test 04 - Translate 'Hello, World! by 3", () => {
+  expect(myFunctions.caesarCipher("Hello, World!", 3)).toBe("Khoor, Zruog!");
+});
+
+it("CaesarCipher test 05 - Translate 'Zoo' by 3", () => {
+  expect(myFunctions.caesarCipher("Zoo", 3)).toBe("Crr");
+});
+
+it("CaesarCipher test 06 - Translate 'Apple' by -3", () => {
+  expect(myFunctions.caesarCipher("Apple", -3)).toBe("Xmmib");
+});
+
+it("CaesarCipher test 07 - Translate 'Apple' by 12000", () => {
+  expect(myFunctions.caesarCipher("Apple", 12000)).toBe("Oddzs");
+});
+
 // Test for isAlphabet()
 it("isAlphabet test 01 - Check 'a'", () => {
   expect(myFunctions.isAlphabet("a")).toBe(true);
