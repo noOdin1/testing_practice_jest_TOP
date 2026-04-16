@@ -25,6 +25,12 @@ it("Reverse a string - test 2", () => {
   expect(myFunctions.reverseStr("edisthgir")).toBe("rightside");
 });
 
+it("Reverse a string - test 3", () => {
+  expect(myFunctions.reverseStr(myFunctions.reverseStr("rightside"))).toBe(
+    "rightside",
+  );
+});
+
 it("Add 2 numbers - test 1", () => {
   expect(myFunctions.calculator.add(1, 2)).toBe(3);
 });
