@@ -35,17 +35,8 @@ const myFunctions = {
     let alphabets = 26;
     // protect this function from outrageous values
     count = Math.abs(count) > alphabets ? count % alphabets : count;
-    // count = -alphabets > count ? Math.abs(count) % alphabets : Math.abs(count);
     let cap = arg < 97 ? 65 : 97;
-    // console.log("cap: " + cap + ", count: " + count + ", arg: " + arg);
     if (arg + count > cap + alphabets - 1) {
-      // console.log(
-      //   "[rotate] arg + count: " +
-      //     (arg + count) +
-      //     ", cap+alphabets: " +
-      //     (cap + alphabets),
-      // );
-      // return arg + count - (cap + alphabets) + cap;
       return ((arg + count) % (cap + alphabets)) + cap;
     }
     if (arg + count < cap) {
@@ -66,7 +57,6 @@ const myFunctions = {
         );
       }, 0)
       .join("");
-    // return tmpStr;
   },
 };
 
