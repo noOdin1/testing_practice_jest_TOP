@@ -58,6 +58,15 @@ const myFunctions = {
       }, 0)
       .join("");
   },
+
+  analyzeArray: (arrArg) => {
+    return {
+      average: arrArg.reduce((p, c) => p + c, 0) / arrArg.length,
+      length: arrArg.length,
+      min: arrArg.reduce((p, c) => Math.min(p, c)),
+      max: arrArg.reduce((p, c) => Math.max(p, c)),
+    };
+  },
 };
 
 export { myFunctions };
