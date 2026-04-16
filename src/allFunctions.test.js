@@ -120,3 +120,44 @@ it("rotate test 04 - 'A' shift by -1", () => {
     "Z",
   );
 });
+
+// tests for analyzeArray()
+it("analyzeArray test01 - Average of the items, [1, 8, 3, 4, 2, 6]", () => {
+  // myFunctions.analyzeArray([1, 8, 3, 4, 2, 6]);
+  expect(myFunctions.analyzeArray([1, 8, 3, 4, 2, 6])).toHaveProperty(
+    "average",
+    4,
+  );
+});
+
+it("analyzeArray test02 - Array length, [1, 8, 3, 4, 2, 6]", () => {
+  expect(myFunctions.analyzeArray([1, 8, 3, 4, 2, 6])).toHaveProperty(
+    "length",
+    6,
+  );
+});
+
+it("analyzeArray test03 - Minimum value in Array, [1, 8, 3, 4, 2, 6]", () => {
+  expect(myFunctions.analyzeArray([1, 8, 3, 4, 2, 6])).toHaveProperty("min", 1);
+});
+
+it("analyzeArray test04 - Maximum value in Array, [1, 8, 3, 4, 2, 6]", () => {
+  expect(myFunctions.analyzeArray([1, 8, 3, 4, 2, 6])).toHaveProperty("max", 8);
+});
+
+it("analyzeArray test05 - Average of the items, [4,4,4,4]", () => {
+  // myFunctions.analyzeArray([1, 8, 3, 4, 2, 6]);
+  expect(myFunctions.analyzeArray([4, 4, 4, 4])).toHaveProperty("average", 4);
+});
+
+it("analyzeArray test06 - Array length, [4,4,4,4]", () => {
+  expect(myFunctions.analyzeArray([4, 4, 4, 4])).toHaveProperty("length", 4);
+});
+
+it("analyzeArray test07 - Minimum value in Array, [4,4,4,4]", () => {
+  expect(myFunctions.analyzeArray([4, 4, 4, 4])).toHaveProperty("min", 4);
+});
+
+it("analyzeArray test08 - Maximum value in Array, [4,4,4,4]", () => {
+  expect(myFunctions.analyzeArray([4, 4, 4, 4])).toHaveProperty("max", 4);
+});
