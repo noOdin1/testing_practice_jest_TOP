@@ -108,3 +108,15 @@ it("rotate test 02 - 'a' shift by -1", () => {
     "z",
   );
 });
+
+it("rotate test 03 - 'Z' shift by 1", () => {
+  expect(String.fromCharCode(myFunctions.rotate("Z".charCodeAt(0), 1))).toBe(
+    "A",
+  );
+});
+
+it("rotate test 04 - 'A' shift by -1", () => {
+  expect(String.fromCharCode(myFunctions.rotate("A".charCodeAt(0), -1))).toBe(
+    "Z",
+  );
+});
