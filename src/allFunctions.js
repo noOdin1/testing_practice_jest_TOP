@@ -29,6 +29,21 @@ const myFunctions = {
     return /^[a-z]$/i.test(arg);
   },
 
+
+  caesarCipher: (str, count) => {
+    return str
+      .split("")
+      .map((cur) => {
+        if (!myFunctions.isAlphabet(cur)) {
+          return cur;
+        }
+        return String.fromCharCode(
+          myFunctions.rotate(cur.charCodeAt(0), count),
+        );
+      }, 0)
+      .join("");
+    // return tmpStr;
+  },
 };
 
 export { myFunctions };
