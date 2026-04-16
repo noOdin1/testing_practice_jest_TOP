@@ -19,7 +19,7 @@ The objectives for this project:<br>
 5. [done] Caesar cipher function takes 2 arguments, a string and<br>
    a shift factor
 6. [done] Caesar cipher must only operate on alphabets<br>
-7. [done] Caesar cipher must also wrap, z -> a or Z -> A<br>
+7. [done] Caesar cipher must also wrap, z -> a or Z -> A or a -> z or A -> Z<br>
 8. [done] Create a object that will analyze any given array that<br>
    will produce:<br>
    [done] a. average of the numbers in that array<br>
@@ -28,6 +28,12 @@ The objectives for this project:<br>
    [done] d. the largest number in the array group<br>
 
 Create a test suite to test:<br>
+
+1. [done] Test capitalize function<br>
+2. [done] Test reverse string function<br>
+3. [done] Test calculator functions<br>
+4. [done] Test caesarCipher function<br>
+5. [done] Test analyzeArray function<br>
 
 <h3>Cypress</h3>
 Part of the files for this package includes a<br>
