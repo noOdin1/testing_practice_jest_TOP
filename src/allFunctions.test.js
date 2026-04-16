@@ -67,3 +67,15 @@ it("isAlphabet test 03 - Check '-'", () => {
   expect(myFunctions.isAlphabet("-")).toBe(false);
 });
 
+// test for rotate()
+it("rotate test 01 - 'z' shift by 1", () => {
+  expect(String.fromCharCode(myFunctions.rotate("z".charCodeAt(0), 1))).toBe(
+    "a",
+  );
+});
+
+it("rotate test 02 - 'a' shift by -1", () => {
+  expect(String.fromCharCode(myFunctions.rotate("a".charCodeAt(0), -1))).toBe(
+    "z",
+  );
+});
