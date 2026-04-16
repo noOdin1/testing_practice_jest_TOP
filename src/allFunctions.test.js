@@ -1,6 +1,7 @@
 /* allFunctions.test.js for "testing_practice_jest_TOP" */
 import { myFunctions } from "./allFunctions";
 
+// Tests for first letter capitalization
 it("Capitalize first letter - test 1", () => {
   expect(myFunctions.capitalize("hello")).toBe("Hello");
 });
@@ -17,6 +18,7 @@ it("Capitalize first letter - test 4", () => {
   expect(myFunctions.capitalize("HELLO")).toBe("HELLO");
 });
 
+// Tests for reversing a string
 it("Reverse a string - test 1", () => {
   expect(myFunctions.reverseStr("rightside")).toBe("edisthgir");
 });
@@ -31,6 +33,7 @@ it("Reverse a string - test 3", () => {
   );
 });
 
+// Tests for calculator functions
 it("Add 2 numbers - test 1", () => {
   expect(myFunctions.calculator.add(1, 2)).toBe(3);
 });
