@@ -32,9 +32,9 @@ const myFunctions = {
       throw new Error("Error occured");
     },
     // JSONPlaceholder
-    fetchUser: () =>
+    fetchUser: (url) =>
       axios
-        .get("https://jsonplaceholder.typicode.com/users/1")
+        .get(url)
         .then((res) => res.data)
         .catch((err) => "error"),
   },

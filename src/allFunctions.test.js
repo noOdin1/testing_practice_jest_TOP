@@ -245,9 +245,10 @@ it("Using .toContain() on an array to find a pattern/string", () => {
 //   });
 // });
 
-it("Refactoring the test from above to use asyn/await", async () => {
+it("Refactoring the test from above to use async/await", async () => {
+  let url = "https://jsonplaceholder.typicode.com/users/1";
   expect.assertions(1); // needed when working with callbacks and/or promises
-  const data = await myFunctions.forMatchers.fetchUser();
+  const data = await myFunctions.forMatchers.fetchUser(url);
   expect(data.name).toEqual("Leanne Graham");
 });
 
