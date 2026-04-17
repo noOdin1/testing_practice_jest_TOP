@@ -204,3 +204,10 @@ test("forMatchers{} test, checkValue() test 1", () => {
   expect(myFunctions.forMatchers.checkValue(0)).toBeFalsy();
 });
 
+test("forMatchers{} test, createUser() test if the object returned is Robert Langdon", () => {
+  expect(myFunctions.forMatchers.createUser()).toEqual({
+    firstName: "Robert",
+    lastName: "Langdon",
+  });
+});
+
