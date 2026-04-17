@@ -184,3 +184,11 @@ it("analyzeArray test10 - using .toEqual() on [4,4,4,4]", () => {
 it("analyzeArray test11 - using .toBeDefined() on [4,4,4,4]", () => {
   expect(myFunctions.analyzeArray([4, 4, 4, 4])).toBeDefined();
 });
+
+// Check for truthy or falsy values
+// toBeNull matches with 'null'
+// toBeUndefined metches only 'undefined'
+// toBeDefined matches any values that is not 'undefined'
+// toBeTruthy matches anything that an if statement treats as true
+// toBeFalsy matches anything that an if statement treats as false
+
