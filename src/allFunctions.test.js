@@ -192,3 +192,15 @@ it("analyzeArray test11 - using .toBeDefined() on [4,4,4,4]", () => {
 // toBeTruthy matches anything that an if statement treats as true
 // toBeFalsy matches anything that an if statement treats as false
 
+test("forMatchers{} test, isNull() test 1", () => {
+  expect(myFunctions.forMatchers.isNull()).toBeNull();
+});
+
+test("forMatchers{} test, isUndefined() test 1", () => {
+  expect(myFunctions.forMatchers.isUndefined()).toBeUndefined();
+});
+
+test("forMatchers{} test, checkValue() test 1", () => {
+  expect(myFunctions.forMatchers.checkValue(0)).toBeFalsy();
+});
+
