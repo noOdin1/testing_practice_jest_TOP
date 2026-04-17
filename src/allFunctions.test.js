@@ -227,3 +227,8 @@ it("Using .toBeGreaterThanOrEqual() to check if result is under a value, 600", (
   expect(myFunctions.calculator.add(201, 399)).toBeGreaterThanOrEqual(600);
 });
 
+it("Using .toMatch() with regex on a string 'Domino', find 'o' and 'I'", () => {
+  expect("Domino").toMatch(/o/);
+  expect("Domino").not.toMatch(/I/);
+});
+
