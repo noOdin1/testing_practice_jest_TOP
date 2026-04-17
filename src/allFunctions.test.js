@@ -232,3 +232,8 @@ it("Using .toMatch() with regex on a string 'Domino', find 'o' and 'I'", () => {
   expect("Domino").not.toMatch(/I/);
 });
 
+it("Using .toContain() on an array to find a pattern/string", () => {
+  usernames = ["John", "Sarah", "admin"];
+  expect(usernames).toContain("admin");
+});
+
