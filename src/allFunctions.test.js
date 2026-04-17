@@ -159,3 +159,23 @@ it("analyzeArray test07 - Minimum value in Array, [4,4,4,4]", () => {
 it("analyzeArray test08 - Maximum value in Array, [4,4,4,4]", () => {
   expect(myFunctions.analyzeArray([4, 4, 4, 4])).toHaveProperty("max", 4);
 });
+
+it("analyzeArray test09 - using .toMatchObject() on [4,4,4,4]", () => {
+  expect(myFunctions.analyzeArray([4, 4, 4, 4])).toMatchObject({
+    average: 4,
+    max: 4,
+  });
+});
+
+it("analyzeArray test10 - using .toEqual() on [4,4,4,4]", () => {
+  expect(myFunctions.analyzeArray([4, 4, 4, 4])).toEqual({
+    average: 4,
+    length: 4,
+    min: 4,
+    max: 4,
+  });
+});
+
+it("analyzeArray test11 - using .toBeDefined() on [4,4,4,4]", () => {
+  expect(myFunctions.analyzeArray([4, 4, 4, 4])).toBeDefined();
+});
