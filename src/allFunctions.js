@@ -1,4 +1,5 @@
 /* "allFunctions.js" for "testing_practice_jest_TOP" */
+import axios from "axios";
 
 const myFunctions = {
   capitalize: (word) => {
