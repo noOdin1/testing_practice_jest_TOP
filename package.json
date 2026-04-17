@@ -27,6 +27,7 @@
   "homepage": "https://github.com/noOdin1/testing_practice_jest_TOP#readme",
   "devDependencies": {
     "@babel/preset-env": "^7.29.2",
+    "axios": "^1.15.0",
     "css-loader": "^7.1.4",
     "html-loader": "^5.1.0",
     "html-webpack-plugin": "^5.6.6",
