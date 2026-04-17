@@ -251,3 +251,12 @@ it("Refactoring the test from above to use asyn/await", async () => {
   expect(data.name).toEqual("Leanne Graham");
 });
 
+it("Test for error thrown", () => {
+  // The following line will generate an error
+  // expect(myFunctions.forMatchers.toThrowError()).toThrow("Error occured");
+
+  // need to have a callback function to catch the error thrown
+  expect(() => {
+    myFunctions.forMatchers.toThrowError();
+  }).toThrow("Error occured");
+});
