@@ -237,3 +237,17 @@ it("Using .toContain() on an array to find a pattern/string", () => {
   expect(usernames).toContain("admin");
 });
 
+// Working with asynchronous data, Promise based
+// it("Testing 'fetch' result to see if, name :'Leanne Graham'", () => {
+//   expect.assertions(1); // needed when working with callbacks and/or promises
+//   return myFunctions.forMatchers.fetchUser().then((data) => {
+//     expect(data.name).toEqual("Leanne Graham");
+//   });
+// });
+
+it("Refactoring the test from above to use asyn/await", async () => {
+  expect.assertions(1); // needed when working with callbacks and/or promises
+  const data = await myFunctions.forMatchers.fetchUser();
+  expect(data.name).toEqual("Leanne Graham");
+});
+
