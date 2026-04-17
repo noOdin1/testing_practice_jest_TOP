@@ -123,7 +123,6 @@ it("rotate test 04 - 'A' shift by -1", () => {
 
 // tests for analyzeArray()
 it("analyzeArray test01 - Average of the items, [1, 8, 3, 4, 2, 6]", () => {
-  // myFunctions.analyzeArray([1, 8, 3, 4, 2, 6]);
   expect(myFunctions.analyzeArray([1, 8, 3, 4, 2, 6])).toHaveProperty(
     "average",
     4,
@@ -146,7 +145,6 @@ it("analyzeArray test04 - Maximum value in Array, [1, 8, 3, 4, 2, 6]", () => {
 });
 
 it("analyzeArray test05 - Average of the items, [4,4,4,4]", () => {
-  // myFunctions.analyzeArray([1, 8, 3, 4, 2, 6]);
   expect(myFunctions.analyzeArray([4, 4, 4, 4])).toHaveProperty("average", 4);
 });
 
