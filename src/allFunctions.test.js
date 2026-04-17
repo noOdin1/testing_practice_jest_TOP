@@ -38,6 +38,11 @@ it("Add 2 numbers - test 1", () => {
   expect(myFunctions.calculator.add(1, 2)).toBe(3);
 });
 
+// A 'not' matcher
+test("Add 2 numbers - adding 2 + 3 to not be 6", () => {
+  expect(myFunctions.calculator.add(2, 3)).not.toBe(6);
+});
+
 it("Substract 2 numbers - test 1", () => {
   expect(myFunctions.calculator.sub(6, 2)).toBe(4);
 });
