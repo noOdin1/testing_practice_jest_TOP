@@ -10,18 +10,10 @@ const myFunctions = {
   },
 
   calculator: {
-    add: (a, b) => {
-      return a + b;
-    },
-    sub: (a, b) => {
-      return a - b;
-    },
-    mul: (a, b) => {
-      return a * b;
-    },
-    div: (a, b) => {
-      return b == 0 ? undefined : a / b;
-    },
+    add: (a, b) => a + b,
+    sub: (a, b) => a - b,
+    mul: (a, b) => a * b,
+    div: (a, b) => (b == 0 ? undefined : a / b),
   },
 
   // checks if 'arg' is an alphabet
