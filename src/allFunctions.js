@@ -17,6 +17,28 @@ const myFunctions = {
     div: (a, b) => (b == 0 ? undefined : a / b),
   },
 
+  forMatchers: {
+    isNull: () => null,
+    isUndefined: () => undefined,
+    checkValue: (x) => x,
+    createUser: () => {
+      const user = {
+        firstName: "Robert",
+      };
+      user["lastName"] = "Langdon";
+      return user;
+    },
+    toThrowError: () => {
+      throw new Error("Error occured");
+    },
+    // JSONPlaceholder
+    fetchUser: () =>
+      axios
+        .get("https://jsonplaceholder.typicode.com/users/1")
+        .then((res) => res.data)
+        .catch((err) => "error"),
+  },
+
   // checks if 'arg' is an alphabet
   isAlphabet: (arg) => {
     return /^[a-z]$/i.test(arg);
