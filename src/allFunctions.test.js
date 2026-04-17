@@ -211,3 +211,19 @@ test("forMatchers{} test, createUser() test if the object returned is Robert Lan
   });
 });
 
+it("Using .toBeLessThan() to check if result is under a value, 600", () => {
+  expect(myFunctions.calculator.add(200, 399)).toBeLessThan(600);
+});
+
+it("Using .toBeLessThanOrEqual() to check if result is under a value, 599", () => {
+  expect(myFunctions.calculator.add(200, 399)).toBeLessThanOrEqual(599);
+});
+
+it("Using .toBeMoreThan() to check if result is over a value, 598", () => {
+  expect(myFunctions.calculator.add(200, 399)).toBeGreaterThan(598);
+});
+
+it("Using .toBeGreaterThanOrEqual() to check if result is under a value, 600", () => {
+  expect(myFunctions.calculator.add(201, 399)).toBeGreaterThanOrEqual(600);
+});
+
