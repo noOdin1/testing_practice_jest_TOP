@@ -55,8 +55,10 @@ it("Divide a number by another number - test 1", () => {
   expect(myFunctions.calculator.div(6, 2)).toBe(3);
 });
 
-it("Divide a number by another number - test 2", () => {
-  expect(myFunctions.calculator.div(6, 0)).toBe(undefined);
+it("Test a division by zero - test 2", () => {
+  expect(() => {
+    myFunctions.calculator.div(7, 0);
+  }).toThrow("Division by zero");
 });
 
 // CaesarCipher tests
