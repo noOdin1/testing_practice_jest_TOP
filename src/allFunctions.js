@@ -14,7 +14,13 @@ const myFunctions = {
     add: (a, b) => a + b,
     sub: (a, b) => a - b,
     mul: (a, b) => a * b,
-    div: (a, b) => (b == 0 ? undefined : a / b),
+    // div: (a, b) => (b == 0 ? undefined : a / b), // previous implementation
+    div: (a, b) =>
+      b != 0
+        ? a / b
+        : (() => {
+            throw new Error("Division by zero");
+          })(),
   },
 
   forMatchers: {
